@@ -1,0 +1,13 @@
+a {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(2, 119, 189, .87);
+
+  &:hover {
+    color: rgba(88, 165, 240, .87);
+  }
+
+  &:active {
+    color: rgba(255, 160, 0, .87);
+    font-weight: 600;
+  }
+}

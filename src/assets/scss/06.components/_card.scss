@@ -1,0 +1,42 @@
+.hs-card, .card {
+  margin: 12px;
+  border: none;
+  border-radius: $radius;
+  color: rgba(153, 153, 153, .87);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, .38) !important;
+  &-header {
+    background: white;
+    color: $text-color;
+    border-bottom: none;
+    margin: 0;
+    &-title {
+      color: rgba(2, 119, 189, .87);
+      font-size: 24px;
+      &__underlined {
+        border-bottom: 1px solid $text-color;
+      }
+      strong {
+        color: $brand-color;
+      }
+      small {
+        display: block;
+        font-size: 13px;
+        color: #9e9e9e;
+        line-height: 15px;
+      }
+    }
+  }
+  &-body {
+    font-size: 14px;
+    &--scroll {
+      overflow-y: auto;
+    }
+  }
+  &-footer {
+    background: white;
+    border-top: none;
+  }
+  &--scroll {
+    overflow-y: auto;
+  }
+}

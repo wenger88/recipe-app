@@ -1,0 +1,24 @@
+// bootstrap variables and functions on top to override them
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+/* Settings – used with preprocessors and contain font, colors definitions, etc. */
+@import '01.settings/';
+/* Tools – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers. */
+@import '02.tools/';
+
+// bootstrap scss
+@import '~bootstrap/scss/bootstrap';
+
+/* Generic – reset and/or normalize styles,
+box-sizing definition,
+etc. This is the first layer which generates actual CSS./*  */
+@import '03.generic/';
+/* Elements – styling for bare HTML 04.elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here. */
+@import '04.elements/';
+// It contains styles for non-cosmetic 05.objects such as containers, wrappers and layout systems
+@import '05.objects/';
+/* Components – specific UI 06.components. This is where majority of our work takes place and our UI 06.components are often composed of Objects and Components */
+@import '06.components/';
+// This layer beats other layers. This is where utility and helper styles are defined
+@import '07.trumps/';

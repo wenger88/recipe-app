@@ -1,0 +1,57 @@
+$color-threshold: 10%;
+
+$brand-color: #0277bd;
+
+$primary-color: $brand-color;
+$primary-dark-color: #004c8c;
+$primary-light-color: #58a5f0;
+$secondary-color: #ffa000;
+$secondary-dark-color: #ff7200;
+$secondary-light-color: #ffd149;
+$basic-color: #666;
+$text-color: rgba(0, 0, 0, .87);
+$success-color: #4caf50;
+$warning-color: #ffd000;
+$danger-color: #f44336;
+$info-color: #26c6da;
+$default-color: #f9f9f9;
+$fill-color: #ebebeb;
+$border-color: #dbdbdb;
+
+$theme-colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  success: $success-color,
+  info: $info-color,
+  warning: $warning-color,
+  danger: $danger-color,
+  default: $basic-color
+);
+
+$dark-primary-color: $text-color;
+$dark-secondary-color: rgba(0, 0, 0, .54);
+$dark-hint-color: rgba(0, 0, 0, .38);
+$dark-disabled-color: rgba(0, 0, 0, .26);
+$light-primary-color: rgba(255, 255, 255, .87);
+$light-secondary-color: rgba(255, 255, 255, .54);
+$light-hint-color: rgba(255, 255, 255, .38);
+$light-disabled-color: rgba(255, 255, 255, .26);
+
+$text-colors: (
+  dark-primary: $dark-primary-color,
+  dark-secondary: $dark-secondary-color,
+  dark-hint: $dark-hint-color,
+  dark-disabled: $dark-disabled-color,
+  light-primary: $light-primary-color,
+  light-secondary: $light-secondary-color,
+  light-hint: $light-hint-color,
+  light-disabled: $light-disabled-color,
+);
+
+@each $color, $value in $text-colors {
+  .text-#{$color} {
+    color: $value;
+  }
+}
+
+$body-color: $text-color;
